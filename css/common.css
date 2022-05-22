@@ -1,0 +1,244 @@
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    padding: 20px 30px;
+
+    background: transparent no-repeat center center / cover;
+    transition: all 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+/* HEADER */
+header {
+    width: 20%;
+    background: rgba(255, 255, 255, 0.7);
+
+    display: inline-flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    border-right: 1px solid #fff;
+
+    padding: 20px;
+    margin-right: 2%;
+}
+
+.user_area > p {
+    font-size: 32px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.user_id {
+    font-size: 20px;
+
+    margin-bottom: 40px;
+}
+
+header button {
+    font-weight: 500;
+    font-size: 16px;
+
+    text-decoration: underline;
+
+    padding: 5px 10px;
+    margin-left: auto;
+    border: 1px solid #111;
+
+    transition: all 0.2s;
+}
+
+header button:hover {
+    color: #fff;
+    background: #111;
+}
+
+/* MAIN */
+main {
+    position: relative;
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.time {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.date {
+    font-size: 40px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.clock {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.quote {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+.quote > p {
+    font-size: 20px;
+
+    text-align: center;
+}
+.quote > p:first-child {
+    margin-bottom: 15px;
+
+    font-weight: 600;
+
+    /* transition: all 0.2s; */
+}
+
+#todo {
+    background-color: #fff;
+    padding: 20px;
+}
+#todo-form {
+}
+#todo-form input {
+    width: 300px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #111;
+    font-size: 16px;
+}
+
+.todo-list {
+    margin-top: 20px;
+    width: 100%;
+
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.todo-list > li {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.todo-list span {
+    font-size: 15px;
+}
+
+.todo-list button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+
+    font-size: 15px;
+
+    transform: translateY(-50%);
+}
+
+#todo-form input:placeholder-shown {
+    border-color: navy;
+}
+#todo-form input::placeholder {
+    color: #222;
+}
+#todo-form button {
+    font-weight: 500;
+    font-size: 16px;
+
+    text-decoration: underline;
+
+    padding: 5px 10px;
+    margin-left: auto;
+    border: 1px solid #111;
+    color: #fff;
+    background: #111;
+
+    transition: all 0.2s;
+}
+
+#todo-form button:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+#weather {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#weather > p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* MODAL */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#login_modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+
+    transform: translate(-50%, -50%);
+}
+#login_form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#login_form fieldset {
+    margin: auto;
+}
+
+#login_form legend {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#login_form input {
+    padding: 10px 10px;
+    border-bottom: 1px solid #111;
+    width: 200px;
+
+    font-size: 12px;
+}
+#login_form button {
+    font-weight: 500;
+    font-size: 16px;
+
+    text-decoration: underline;
+
+    padding: 5px 10px;
+    margin-left: auto;
+    border: 1px solid #111;
+
+    transition: all 0.2s;
+}

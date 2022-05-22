@@ -1,1 +1,66 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Brand</title><script defer="defer" src="/static/js/main.13e9fdd3.js"></script><link href="/static/css/main.ab1ab64a.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Nomard VanilaJS</title>
+        <!-- css -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="user_area hidden">
+                <p>Hello!</p>
+                <b class="user_id"></b>
+                <button type="button" class="hidden">Logout</button>
+            </div>
+        </header>
+        <!-- MAIN -->
+        <main>
+            <!-- Time -->
+            <section class="time">
+                <p class="date"></p>
+                <p class="clock"></p>
+            </section>
+
+            <!-- Todo -->
+            <section id="todo">
+                <form action="" id="todo-form">
+                    <input type="text" placeholder="Write a Todo and Press Enter" required />
+                    <button type="submit">addTodo</button>
+                </form>
+                <ul class="todo-list"></ul>
+            </section>
+
+            <!-- Quote -->
+            <section class="quote">
+                <p></p>
+                <p></p>
+            </section>
+
+            <!-- weather -->
+            <section id="weather">
+                <p></p>
+                <p></p>
+            </section>
+        </main>
+
+        <dialog id="login_modal">
+            <form action="" id="login_form">
+                <fieldset>
+                    <legend>Login</legend>
+                    <input type="text" placeholder="Write Your Name" maxlength="6" required />
+                    <button type="submit">Login</button>
+                </fieldset>
+            </form>
+        </dialog>
+
+        <!-- js -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/wearher.js"></script>
+    </body>
+</html>
